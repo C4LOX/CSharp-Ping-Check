@@ -17,7 +17,7 @@ namespace ConsoleApp2
             Console.WriteLine("------------------------------------------------");
 
 
-            const int pingCount = 5; // 10 ping isteği göndereceğiz
+            const int pingCount = 10; // 10 ping isteği göndereceğiz
             List<long> pingTimes = new List<long>(); // Ping sürelerini tutacağımız
             List<long> pingTimes2 = new List<long>(); 
             List<long> pingTimes3 = new List<long>();
