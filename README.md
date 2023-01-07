@@ -15,4 +15,4 @@
 |`CloudFlare (DNS)`|`Riot Games`|
 | `Discord`|`Epic Games (Fornite)`|
 |`Next DNS`|`Rainbow Six Siege`|
-|`Battlefield`|
+||`Battlefield`|
