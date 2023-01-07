@@ -14,5 +14,5 @@
 | `Google (DNS)`|`Valve (IPv4)`|
 |`CloudFlare (DNS)`|`Riot Games`|
 | `Discord`|`Epic Games (Fornite)`|
-||`Rainbow Six Siege`|
-|`Next DNS`|`Battlefield`|
+|`Next DNS`|`Rainbow Six Siege`|
+|`Battlefield`|
