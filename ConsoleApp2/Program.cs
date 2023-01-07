@@ -17,8 +17,8 @@ namespace ConsoleApp2
             Console.WriteLine("------------------------------------------------");
 
 
-            const int pingCount = 10; // 10 ping isteği göndereceğiz
-            List<long> pingTimes = new List<long>(); // Ping sürelerini tutacağımız
+            const int pingCount = 10; //We will send 10 ping requests
+            List<long> pingTimes = new List<long>(); // We will keep ping times
             List<long> pingTimes2 = new List<long>(); 
             List<long> pingTimes3 = new List<long>();
             List<long> pingTimes4 = new List<long>();
@@ -38,7 +38,7 @@ namespace ConsoleApp2
             for (int i = 0; i < pingCount; i++)
             {
                 PingReply reply = ping.Send("100.127.254.1");
-                PingReply reply2 = ping.Send("8.8.8.8");// Google'ın DNS sunucusuna ping gönder
+                PingReply reply2 = ping.Send("8.8.8.8");// Ping Google's DNS server
                 PingReply reply3 = ping.Send("104.160.143.212");
                 PingReply reply4 = ping.Send("146.66.155.69");
                 PingReply reply5 = ping.Send("3.64.0.0");
@@ -53,7 +53,7 @@ namespace ConsoleApp2
 
                 if (reply.Status == IPStatus.Success)
                 {
-                    pingTimes.Add(reply.RoundtripTime); // Ping süresini listeye ekle
+                    pingTimes.Add(reply.RoundtripTime); // Add ping time to list
                     pingTimes2.Add(reply2.RoundtripTime);
                     pingTimes3.Add(reply3.RoundtripTime);
                     pingTimes4.Add(reply4.RoundtripTime);
@@ -69,7 +69,7 @@ namespace ConsoleApp2
                 }
             }
 
-            long totalTime = pingTimes.Sum(); // Ping sürelerinin toplamını hesapla
+            long totalTime = pingTimes.Sum(); // Calculate the sum of ping times
             long totalTime2 = pingTimes2.Sum();
             long totalTime3 = pingTimes3.Sum();
             long totalTime4 = pingTimes4.Sum();
@@ -83,7 +83,7 @@ namespace ConsoleApp2
             long totalTime12 = pingTimes12.Sum();
             long totalTime13 = pingTimes13.Sum();
 
-            double averageTime = (double)totalTime / pingCount; // Ortalama ping süresini hesapla
+            double averageTime = (double)totalTime / pingCount; // Calculate average ping time
             double averageTime2 = (double)totalTime2 / pingCount;
             double averageTime3 = (double)totalTime3 / pingCount;
             double averageTime4 = (double)totalTime4 / pingCount;
