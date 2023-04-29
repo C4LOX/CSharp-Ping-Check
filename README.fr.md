@@ -8,7 +8,7 @@
 <br/>
 <p>PingChecker est une simple application console écrite en .NET Framework 4.7.2 qui vous permet de vérifier le ping des services Internet et des jeux.</p>
 
-## Test edilen internet hizmetleri ve oyunlar
+## Services Internet et jeux testés
 |SERVICES|JEUX|
 |-|-|
 | `Google (DNS)`|`Valve (IPv4)`|
